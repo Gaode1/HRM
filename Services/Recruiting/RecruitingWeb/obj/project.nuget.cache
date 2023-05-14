@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2k9OKxIZ9lCcRNsNjpuz4bmLHIwYDdK5Puk6Ewdz4Ye6PuoYADo1mZ+CzBoZ7R8Z0apULpp17fS3x+mp8XNy8Q==",
+  "dgSpecHash": "p7f8M6XeGtQDBNu8LXktTHNkJkRWR0NLUwbed174iU7nX8Kk/riX/ffb3hBGSNb0LwTMuwtD79ULyNv3ZqRuvA==",
   "success": true,
   "projectFilePath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/RecruitingWeb.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "/Users/gaode/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.5/microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.aspnetcore.diagnostics.entityframeworkcore/7.0.5/microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.5.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.5/microsoft.aspnetcore.identity.entityframeworkcore.7.0.5.nupkg.sha512",
-    "/Users/gaode/.nuget/packages/microsoft.aspnetcore.identity.ui/7.0.5/microsoft.aspnetcore.identity.ui.7.0.5.nupkg.sha512",
+    "/Users/gaode/.nuget/packages/microsoft.aspnetcore.identity.ui/8.0.0-preview.3.23177.8/microsoft.aspnetcore.identity.ui.8.0.0-preview.3.23177.8.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.11/microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.build/17.3.2/microsoft.build.17.3.2.nupkg.sha512",
@@ -53,8 +53,6 @@
     "/Users/gaode/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.extensions.dependencymodel/7.0.0/microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
-    "/Users/gaode/.nuget/packages/microsoft.extensions.fileproviders.abstractions/7.0.0/microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
-    "/Users/gaode/.nuget/packages/microsoft.extensions.fileproviders.embedded/7.0.5/microsoft.extensions.fileproviders.embedded.7.0.5.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.extensions.identity.core/7.0.5/microsoft.extensions.identity.core.7.0.5.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.extensions.identity.stores/7.0.5/microsoft.extensions.identity.stores.7.0.5.nupkg.sha512",
     "/Users/gaode/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",

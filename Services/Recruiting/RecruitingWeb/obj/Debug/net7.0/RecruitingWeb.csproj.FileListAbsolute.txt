@@ -12,7 +12,6 @@
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.Data.Sqlite.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -20,7 +19,6 @@
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
-/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Embedded.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
@@ -57,7 +55,6 @@
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.AssemblyInfoInputs.cache
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.AssemblyInfo.cs
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.csproj.CoreCompileInputs.cache
-/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.MvcApplicationPartsAssemblyInfo.cs
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.MvcApplicationPartsAssemblyInfo.cache
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.RazorAssemblyInfo.cache
 /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb/obj/Debug/net7.0/RecruitingWeb.RazorAssemblyInfo.cs

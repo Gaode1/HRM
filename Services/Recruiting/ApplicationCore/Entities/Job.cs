@@ -17,5 +17,8 @@ public class Job
     [MaxLength(1000)]
     public string? ClosedReason { get; set; }
     public DateTime? CreatedOn { get; set; }
-
+    public int StatusId { get; set; }
+    public Status Status { get; set; }
+    public int JobRequirementId { get; set; }
+    public JobRequirement JobRequirement { get; set; }
 }

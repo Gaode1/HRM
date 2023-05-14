@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Services\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitingWeb", "Services\Recruiting\RecruitingWeb\RecruitingWeb.csproj", "{B0E89BC4-F889-4F61-B1A3-616E15D92D6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitingWeb1", "Services\Recruiting\RecruitingWeb1\RecruitingWeb1.csproj", "{8D1A1204-BB33-45F3-A5CD-22B05E3CDE1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,10 +34,15 @@ Global
 		{B0E89BC4-F889-4F61-B1A3-616E15D92D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0E89BC4-F889-4F61-B1A3-616E15D92D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0E89BC4-F889-4F61-B1A3-616E15D92D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1A1204-BB33-45F3-A5CD-22B05E3CDE1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1A1204-BB33-45F3-A5CD-22B05E3CDE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1A1204-BB33-45F3-A5CD-22B05E3CDE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1A1204-BB33-45F3-A5CD-22B05E3CDE1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FABD33DD-74D7-44A4-A598-260C6767B5D9} = {A9AEC78F-38E9-4726-A858-3AB8BC1F8F35}
 		{3BFF1B7B-9269-492E-9272-F41DFF7C01E5} = {A9AEC78F-38E9-4726-A858-3AB8BC1F8F35}
 		{B0E89BC4-F889-4F61-B1A3-616E15D92D6E} = {A9AEC78F-38E9-4726-A858-3AB8BC1F8F35}
+		{8D1A1204-BB33-45F3-A5CD-22B05E3CDE1A} = {A9AEC78F-38E9-4726-A858-3AB8BC1F8F35}
 	EndGlobalSection
 EndGlobal
