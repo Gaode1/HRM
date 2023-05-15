@@ -14,9 +14,9 @@ public class JobService : IJobService
     {
         _jobRepository = jobRepository;
     }
-    public List<JobResponseModel> GetAllJobs()
+    public async Task<List<JobResponseModel>> GetAllJobs()
     {
-        var jobs = _jobRepository.GetAllJobs();
+        var jobs =  await _jobRepository.GetAllJobs();
             // This code can be done by using LinQ:
             // foreach(var job in jobs)
             // {
@@ -28,9 +28,9 @@ public class JobService : IJobService
         return jobs.Select(job => new JobResponseModel() { Id = job.Id, Description = job.Description, Title = job.Title }).ToList();
     }
 
-    public JobResponseModel GetJobById(int id)
+    public async Task<JobResponseModel> GetJobById(int id)
     {
-        var job = _jobRepository.GetJobById(id);
+        var job = await _jobRepository.GetJobById(id);
         return new JobResponseModel() { Id = job.Id, Description = job.Description, Title = job.Title };
     }
 }

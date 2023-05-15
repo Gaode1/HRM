@@ -14,16 +14,16 @@ public class JobController : Controller
         _jobService = jobService;
     }
     // GET
-    public IActionResult Index()
+    public async Task<ViewResult> Index()
     {
-        List<JobResponseModel> jobs =_jobService.GetAllJobs();
+        List<JobResponseModel> jobs =await _jobService.GetAllJobs();
         return View(jobs);
     }
 
     [HttpPost]
-    public IActionResult Detail(int id)
+    public async Task<IActionResult> Detail(int id)
     {
-        JobResponseModel job = _jobService.GetJobById(id);
+        Task<JobResponseModel> job = _jobService.GetJobById(id);
         return View(job);
     }
 

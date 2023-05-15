@@ -5,6 +5,6 @@ namespace ApplicationCore.Contracts.Repositories;
 
 public interface IJobRepository
 {
-    List<Job> GetAllJobs();
-    Job GetJobById(int id);
+    Task<List<Job>> GetAllJobs();
+    Task<Job> GetJobById(int id);
 }

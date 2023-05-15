@@ -2,6 +2,7 @@ using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
@@ -14,15 +15,15 @@ public class JobRepository : IJobRepository
         _recruitingDbContext = recruitingDbContext;
     }
 
-    public List<Job> GetAllJobs()
+    public async Task<List<Job>> GetAllJobs()
     {
-        var jobs = _recruitingDbContext.Jobs.ToList();
+        var jobs = await _recruitingDbContext.Jobs.ToListAsync();
         return jobs;
     }
 
-    public Job GetJobById(int id) 
+    public async Task<Job> GetJobById(int id) 
     {
-        var job = _recruitingDbContext.Jobs.FirstOrDefault(j => j.Id == id, new Job());
+        var job = await _recruitingDbContext.Jobs.FirstOrDefaultAsync(j => j.Id == id);
         return job;
     }
 }

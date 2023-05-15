@@ -5,6 +5,6 @@ namespace ApplicationCore.Contracts.Services;
 
 public interface ISubmissionService
 {
-    List<Submission> getAllSubmission();
+    Task<List<Submission>> getAllSubmission();
 
 }

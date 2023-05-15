@@ -2,6 +2,7 @@ using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
@@ -13,8 +14,8 @@ public class SubmissionRepository: ISubmissionRepository
     {
         _dbContext = dbContext;
     }
-    public List<Submission> getAllSubmission()
+    public async Task<List<Submission>> getAllSubmission()
     {
-        return _dbContext.Submissions.ToList();
+        return await _dbContext.Submissions.ToListAsync();
     }
 }

@@ -5,5 +5,5 @@ namespace ApplicationCore.Contracts.Repositories;
 
 public interface ISubmissionRepository
 {
-    List<Submission> getAllSubmission();
+    Task<List<Submission>> getAllSubmission();
 }

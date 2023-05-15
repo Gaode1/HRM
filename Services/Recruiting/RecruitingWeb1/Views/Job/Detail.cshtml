@@ -1,4 +1,4 @@
-@model ApplicationCore.Models.JobResponseModel;
+@model Task<ApplicationCore.Models.JobResponseModel>;
 
 @{
     Layout = null;
@@ -12,7 +12,7 @@
 </head>
 <body>
 <div>
-    <h2>@Model.Description @Model.Title</h2>
+    <h2>@Model.Id</h2>
 </div>
 </body>
 </html>

@@ -13,8 +13,8 @@ public class SubmissionService: ISubmissionService
     {
         _submissionRepository = submissionRepository;
     }
-    public List<Submission> getAllSubmission()
+    public async Task<List<Submission>> getAllSubmission()
     {
-        return _submissionRepository.getAllSubmission();
+        return await _submissionRepository.getAllSubmission();
     }
 }
