@@ -1,4 +1,5 @@
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +20,7 @@ public class CandidateController : Controller
 
     public IActionResult Candidates()
     {
-        List<CandidateResponseModel> candidates = _candidateService.GetAllCandidates();
+        List<Candidate> candidates = _candidateService.GetAllCandidates();
         return View(candidates);
     }
 }

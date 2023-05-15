@@ -1,4 +1,5 @@
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,5 +18,17 @@ public class JobController : Controller
     {
         List<JobResponseModel> jobs =_jobService.GetAllJobs();
         return View(jobs);
+    }
+
+    [HttpPost]
+    public IActionResult Detail(int id)
+    {
+        JobResponseModel job = _jobService.GetJobById(id);
+        return View(job);
+    }
+
+    public IActionResult Create()
+    {
+        return View();
     }
 }

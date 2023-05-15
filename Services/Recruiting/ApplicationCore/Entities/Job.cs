@@ -19,6 +19,6 @@ public class Job
     public DateTime? CreatedOn { get; set; }
     public int StatusId { get; set; }
     public Status Status { get; set; }
-    public int JobRequirementId { get; set; }
-    public JobRequirement JobRequirement { get; set; }
+    //Navigation property
+    public JobRequirement? JobRequirement { get; set; }
 }

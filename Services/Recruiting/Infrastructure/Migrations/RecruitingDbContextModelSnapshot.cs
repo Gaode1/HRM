@@ -127,6 +127,37 @@ namespace Infrastructure.Migrations
                     b.ToTable("Jobs");
                 });
 
+            modelBuilder.Entity("ApplicationCore.Entities.JobRequirement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("JobId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("yoe")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("JobId")
+                        .IsUnique()
+                        .HasFilter("[JobId] IS NOT NULL");
+
+                    b.ToTable("JobRequirement");
+                });
+
             modelBuilder.Entity("ApplicationCore.Entities.Status", b =>
                 {
                     b.Property<int>("Id")
@@ -180,15 +211,64 @@ namespace Infrastructure.Migrations
                     b.ToTable("Submissions");
                 });
 
+            modelBuilder.Entity("CandidateSubmission", b =>
+                {
+                    b.Property<int>("CandidatesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubmissionsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CandidatesId", "SubmissionsId");
+
+                    b.HasIndex("SubmissionsId");
+
+                    b.ToTable("CandidateSubmission");
+                });
+
             modelBuilder.Entity("ApplicationCore.Entities.Job", b =>
                 {
                     b.HasOne("ApplicationCore.Entities.Status", "Status")
-                        .WithMany()
+                        .WithMany("Jobs")
                         .HasForeignKey("StatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Status");
+                });
+
+            modelBuilder.Entity("ApplicationCore.Entities.JobRequirement", b =>
+                {
+                    b.HasOne("ApplicationCore.Entities.Job", "Job")
+                        .WithOne("JobRequirement")
+                        .HasForeignKey("ApplicationCore.Entities.JobRequirement", "JobId");
+
+                    b.Navigation("Job");
+                });
+
+            modelBuilder.Entity("CandidateSubmission", b =>
+                {
+                    b.HasOne("ApplicationCore.Entities.Candidate", null)
+                        .WithMany()
+                        .HasForeignKey("CandidatesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ApplicationCore.Entities.Submission", null)
+                        .WithMany()
+                        .HasForeignKey("SubmissionsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ApplicationCore.Entities.Job", b =>
+                {
+                    b.Navigation("JobRequirement");
+                });
+
+            modelBuilder.Entity("ApplicationCore.Entities.Status", b =>
+                {
+                    b.Navigation("Jobs");
                 });
 #pragma warning restore 612, 618
         }

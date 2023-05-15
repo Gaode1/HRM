@@ -1,16 +1,17 @@
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 
 namespace Infrastructure.Services;
 
 public class JobRequirementService : IJobRequirementService
 {
-    public List<JobRequirementResponseModel> getAllJobRequirement()
+    public List<JobRequirement> getAllJobRequirement()
     {
         throw new NotImplementedException();
     }
 
-    public JobRequirementResponseModel getJobRequirementByID(int id)
+    public JobRequirement getJobRequirementByID(int id)
     {
         throw new NotImplementedException();
     }

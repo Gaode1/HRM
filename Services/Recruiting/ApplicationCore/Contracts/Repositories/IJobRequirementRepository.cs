@@ -1,9 +1,10 @@
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Repositories;
 
 public interface IJobRequirementRepository
 {
-    List<JobRequirementResponseModel> getAllJobRequirement();
-    JobRequirementResponseModel getJobRequirementByID(int id);
+    List<JobRequirement> getAllJobRequirement();
+    JobRequirement getJobRequirementByID(int id);
 }

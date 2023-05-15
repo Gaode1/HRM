@@ -1,12 +1,20 @@
 using ApplicationCore.Contracts.Repositories;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
+using Infrastructure.Data;
 
 namespace Infrastructure.Repositories;
 
 public class SubmissionRepository: ISubmissionRepository
 {
-    public List<SubmissionResponseModel> getAllSubmission()
+    private readonly RecruitingDbContext _dbContext;
+
+    public SubmissionRepository(RecruitingDbContext dbContext)
     {
-        throw new NotImplementedException();
+        _dbContext = dbContext;
+    }
+    public List<Submission> getAllSubmission()
+    {
+        return _dbContext.Submissions.ToList();
     }
 }

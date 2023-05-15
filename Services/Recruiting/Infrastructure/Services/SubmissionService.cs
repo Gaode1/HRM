@@ -1,12 +1,20 @@
+using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 
 namespace Infrastructure.Services;
 
 public class SubmissionService: ISubmissionService
 {
-    public List<SubmissionResponseModel> getAllSubmission()
+    private readonly ISubmissionRepository _submissionRepository;
+
+    public SubmissionService(ISubmissionRepository submissionRepository)
     {
-        throw new NotImplementedException();
+        _submissionRepository = submissionRepository;
+    }
+    public List<Submission> getAllSubmission()
+    {
+        return _submissionRepository.getAllSubmission();
     }
 }

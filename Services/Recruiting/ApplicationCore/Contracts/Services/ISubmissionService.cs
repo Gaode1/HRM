@@ -1,9 +1,10 @@
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services;
 
 public interface ISubmissionService
 {
-    List<SubmissionResponseModel> getAllSubmission();
+    List<Submission> getAllSubmission();
 
 }

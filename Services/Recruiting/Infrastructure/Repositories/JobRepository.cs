@@ -1,17 +1,28 @@
 using ApplicationCore.Contracts.Repositories;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
+using Infrastructure.Data;
 
 namespace Infrastructure.Repositories;
 
 public class JobRepository : IJobRepository
 {
-    public List<JobResponseModel> GetAllJobs()
+    private RecruitingDbContext _recruitingDbContext;
+
+    public JobRepository(RecruitingDbContext recruitingDbContext)
     {
-        throw new NotImplementedException();
+        _recruitingDbContext = recruitingDbContext;
     }
 
-    public JobResponseModel GetJobById(int id)
+    public List<Job> GetAllJobs()
     {
-        throw new NotImplementedException();
+        var jobs = _recruitingDbContext.Jobs.ToList();
+        return jobs;
+    }
+
+    public Job GetJobById(int id) 
+    {
+        var job = _recruitingDbContext.Jobs.FirstOrDefault(j => j.Id == id, new Job());
+        return job;
     }
 }

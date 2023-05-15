@@ -6,6 +6,6 @@ public class JobRequirement
     public string language { get; set; }
     public int yoe { get; set; }
     public string location { get; set; }
-    public int JobId { get; set; }
-    public Job Job { get; set; }
+    public int? JobId { get; set; }
+    public Job? Job { get; set; }
 }

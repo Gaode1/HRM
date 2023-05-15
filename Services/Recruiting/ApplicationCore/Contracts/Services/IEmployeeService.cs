@@ -1,9 +1,10 @@
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services;
 
 public interface IEmployeeService
 {
-    List<EmployeeResponseModel> GetALlEmployee();
+    List<Employee> GetALlEmployee();
 
 }
