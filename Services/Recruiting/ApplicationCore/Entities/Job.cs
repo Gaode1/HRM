@@ -8,7 +8,7 @@ public class Job
     public Guid JobCode { get; set; }
     [MaxLength(100)]
     public string Title { get; set; }
-    [MaxLength(3000)]
+    [MaxLength(2048)]
     public string Description { get; set; }
     public bool? IsActive { get; set; }
     public int NumberOfPositions { get; set; }

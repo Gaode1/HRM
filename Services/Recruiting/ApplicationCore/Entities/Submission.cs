@@ -8,6 +8,6 @@ public class Submission
     public DateTime? SubmittedOn { get; set; }
     public DateTime? ApprovedForInterview { get; set; }
     public DateTime? RejectedOn { get; set; }
-    public string RejectReason { get; set; }
-    public List<Candidate> Candidates { get; set; }
+    public string? RejectReason { get; set; }
+    // public List<Candidate> Candidates { get; set; }
 }

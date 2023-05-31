@@ -5,5 +5,5 @@ namespace ApplicationCore.Contracts.Repositories;
 
 public interface ISubmissionRepository
 {
-    Task<List<Submission>> getAllSubmission();
+    Task<List<Submission>> GetSubmissionsByJobId(int id);
 }

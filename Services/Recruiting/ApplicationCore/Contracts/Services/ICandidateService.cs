@@ -3,7 +3,7 @@ using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services;
 
-public interface ICandidateService
+public interface ICandidateService : IBaseService<Candidate>
 {
     List<Candidate> GetAllCandidates();
 }

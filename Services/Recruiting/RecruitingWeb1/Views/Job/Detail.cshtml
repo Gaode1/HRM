@@ -1,18 +1,47 @@
-@model Task<ApplicationCore.Models.JobResponseModel>;
+@model ApplicationCore.Models.JobResponseModel
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Detail";
 }
 
-<!DOCTYPE html>
+<h1>Detail</h1>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-    <h2>@Model.Id</h2>
-</div>
-</body>
-</html>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@* @foreach (var item in Model) { *@
+        <tr>
+            <td>
+                @Model.Id
+            </td>
+            <td>
+                @Model.Description
+            </td>
+            <td>
+                @Model.Title
+            </td>
+            <td>
+                @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) | *@
+                @* @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) | *@
+                @* @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) *@
+            </td>
+        </tr>
+@* } *@
+    </tbody>
+</table>

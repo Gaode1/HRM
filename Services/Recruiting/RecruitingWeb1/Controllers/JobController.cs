@@ -20,15 +20,30 @@ public class JobController : Controller
         return View(jobs);
     }
 
-    [HttpPost]
+    // [HttpPost]
     public async Task<IActionResult> Detail(int id)
     {
-        Task<JobResponseModel> job = _jobService.GetJobById(id);
+        JobResponseModel job = await _jobService.GetJobById(id);
         return View(job);
     }
 
+    [HttpGet]
+    //show the empty page
     public IActionResult Create()
     {
         return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(JobRequestModel jobRequestModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View();
+        }
+        //save date into DB
+        //then return to index view
+        await _jobService.AddJob(jobRequestModel);
+        return RedirectToAction("Index");
     }
 }

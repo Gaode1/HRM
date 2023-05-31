@@ -3,8 +3,8 @@ using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services;
 
-public interface ISubmissionService
+public interface ISubmissionService: IBaseService<Submission>
 {
-    Task<List<Submission>> getAllSubmission();
+    Task<List<Submission>> GetSubmissionsByJobId(int id);
 
 }

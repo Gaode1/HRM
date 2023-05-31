@@ -15,7 +15,7 @@ public class SubmissionController : Controller
     // GET
     public async Task<ViewResult> Index()
     {
-        List<Submission> submission = await _submissionService.getAllSubmission();
+        IEnumerable<Submission> submission = await _submissionService.GetAllAsync();
         return View(submission);
     }
 

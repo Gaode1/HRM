@@ -30,25 +30,42 @@ namespace Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<Guid>("CandidateIdentityId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("MiddleName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("NumOfJobsApplied")
+                    b.Property<string>("ResumeURL")
+                        .IsRequired()
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
+
+                    b.Property<int?>("SubmissionId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SubmissionId");
 
                     b.ToTable("Candidates");
                 });
@@ -97,8 +114,8 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(3000)
-                        .HasColumnType("nvarchar(3000)");
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
 
                     b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
@@ -211,25 +228,17 @@ namespace Infrastructure.Migrations
                     b.ToTable("Submissions");
                 });
 
-            modelBuilder.Entity("CandidateSubmission", b =>
+            modelBuilder.Entity("ApplicationCore.Entities.Candidate", b =>
                 {
-                    b.Property<int>("CandidatesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SubmissionsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CandidatesId", "SubmissionsId");
-
-                    b.HasIndex("SubmissionsId");
-
-                    b.ToTable("CandidateSubmission");
+                    b.HasOne("ApplicationCore.Entities.Submission", null)
+                        .WithMany("Candidates")
+                        .HasForeignKey("SubmissionId");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entities.Job", b =>
                 {
                     b.HasOne("ApplicationCore.Entities.Status", "Status")
-                        .WithMany("Jobs")
+                        .WithMany()
                         .HasForeignKey("StatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -246,29 +255,14 @@ namespace Infrastructure.Migrations
                     b.Navigation("Job");
                 });
 
-            modelBuilder.Entity("CandidateSubmission", b =>
-                {
-                    b.HasOne("ApplicationCore.Entities.Candidate", null)
-                        .WithMany()
-                        .HasForeignKey("CandidatesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ApplicationCore.Entities.Submission", null)
-                        .WithMany()
-                        .HasForeignKey("SubmissionsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("ApplicationCore.Entities.Job", b =>
                 {
                     b.Navigation("JobRequirement");
                 });
 
-            modelBuilder.Entity("ApplicationCore.Entities.Status", b =>
+            modelBuilder.Entity("ApplicationCore.Entities.Submission", b =>
                 {
-                    b.Navigation("Jobs");
+                    b.Navigation("Candidates");
                 });
 #pragma warning restore 612, 618
         }

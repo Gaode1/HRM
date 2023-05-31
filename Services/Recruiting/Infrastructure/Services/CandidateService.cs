@@ -5,13 +5,15 @@ using ApplicationCore.Models;
 
 namespace Infrastructure.Services;
 
-public class CandidateService: ICandidateService
+public class CandidateService: BaseService<Candidate>,ICandidateService
 {
     private readonly ICandidateRepository _candidateRepository;
+    private readonly IBaseRepository<Candidate> _baseRepository;
 
-    public CandidateService(ICandidateRepository candidateRepository)
+    public CandidateService(ICandidateRepository candidateRepository, IBaseRepository<Candidate> baseRepository) : base(baseRepository)
     {
         _candidateRepository = candidateRepository;
+        _baseRepository = baseRepository;
     }
     public List<Candidate> GetAllCandidates()
     {

@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
-public class JobRepository : IJobRepository
+public class JobRepository : BaseRepository<Job>, IJobRepository
 {
-    private RecruitingDbContext _recruitingDbContext;
+    private readonly RecruitingDbContext _recruitingDbContext;
 
-    public JobRepository(RecruitingDbContext recruitingDbContext)
+    public JobRepository(RecruitingDbContext recruitingDbContext) : base(recruitingDbContext)
     {
         _recruitingDbContext = recruitingDbContext;
     }
@@ -18,6 +18,7 @@ public class JobRepository : IJobRepository
     public async Task<List<Job>> GetAllJobs()
     {
         var jobs = await _recruitingDbContext.Jobs.ToListAsync();
+        // var list = RecruitingDbContext.Jobs.Include(job => job.Status).ThenInclude(status => status.StatusDescription).ToList();
         return jobs;
     }
 
