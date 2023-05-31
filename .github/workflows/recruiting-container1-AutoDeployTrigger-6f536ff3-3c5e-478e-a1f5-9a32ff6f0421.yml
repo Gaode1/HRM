@@ -1,0 +1,42 @@
+name: Trigger auto deployment for recruiting-container1
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ master ]
+    paths:
+    - 'Services/Recruiting/Recruiting.API/**'
+    - '.github/workflows/recruiting-container1-AutoDeployTrigger-6f536ff3-3c5e-478e-a1f5-9a32ff6f0421.yml'
+
+  # Allow mannually trigger 
+  workflow_dispatch:
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.RECRUITINGCONTAINER1_AZURE_CREDENTIALS }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          appSourcePath: ${{ github.workspace }}Services/Recruiting/Recruiting.API 
+          registryUrl: apr2023cr.azurecr.io
+          registryUsername: ${{ secrets.RECRUITINGCONTAINER1_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.RECRUITINGCONTAINER1_REGISTRY_PASSWORD }}
+          containerAppName: recruiting-container1
+          resourceGroup: April2023Batch
+          imageToBuild: apr2023cr.azurecr.io/recruiting-microservice:${{ github.sha }}
+          dockerfilePath: Dockerfile
+
+     
+
