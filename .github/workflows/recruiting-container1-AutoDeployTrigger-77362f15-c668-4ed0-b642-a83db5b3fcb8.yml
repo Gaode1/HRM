@@ -7,7 +7,7 @@ on:
     branches: 
       [ master ]
     paths:
-    - 'Dockerfile.Recruiting'
+    - 'Dockerfile.Recruiting/**'
     - '.github/workflows/recruiting-container1-AutoDeployTrigger-77362f15-c668-4ed0-b642-a83db5b3fcb8.yml'
 
   # Allow mannually trigger 
@@ -36,7 +36,7 @@ jobs:
           containerAppName: recruiting-container1
           resourceGroup: April2023Batch
           imageToBuild: apr2023cr.azurecr.io/recruiting-microservice:${{ github.sha }}
-          dockerfilePath: Dockerfile
+          dockerfilePath: Dockerfile.Recruiting
 
      
 
