@@ -7,7 +7,7 @@ on:
     branches: 
       [ master ]
     paths:
-    - 'Dockerfile.Recruiting/**'
+    - 'Dockerfile.Recruiting'
     - '.github/workflows/recruiting-container1-AutoDeployTrigger-77362f15-c668-4ed0-b642-a83db5b3fcb8.yml'
 
   # Allow mannually trigger 
