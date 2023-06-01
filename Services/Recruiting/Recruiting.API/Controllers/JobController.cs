@@ -7,6 +7,7 @@ using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
 
@@ -89,6 +90,13 @@ namespace Recruiting.API.Controllers
             var job = await _jobService.DeleteJob(id);
             // return CreatedAtAction("GetJobDetails", new { Controller = "job", id = job }, "Delete success");
             return Ok("Delete success");
+        }
+
+        [HttpGet]
+        [Route("test")]
+        public IActionResult Test()
+        {
+            return Ok("s");
         }
     }
 }
