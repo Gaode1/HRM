@@ -31,7 +31,7 @@ namespace Recruiting.API.Controllers
             var submission = await _submissionService.GetAllAsync();
             if (!submission.Any())
             {
-                return NotFound("No submissions found");
+                return NotFound("No submissions found.");
             }
             return Ok(submission);
         }
@@ -43,7 +43,7 @@ namespace Recruiting.API.Controllers
             var submissions = await _submissionService.GetSubmissionsByJobId(id);
             if (!submissions.Any())
             {
-                return NotFound("No submissions found");
+                return NotFound("No submissions found.");
             }
             return Ok(submissions);
         }
