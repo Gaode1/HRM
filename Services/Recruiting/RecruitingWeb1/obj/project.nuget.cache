@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5LuoakNoxyE65j+p8//if6kfZNm7vfznhagiMCEKK8XJ7Ca3IQcRVdqNraZF5cqTw7oK4zdZFUNvLq4BBBrzHg==",
+  "dgSpecHash": "pXkFIReMBEU27r/Wg/NjYZe+OzF+QbLVhZebuPT778rfgiAmIy8E8pjyK/KObnRU8Whhn0yIhZwDp63L3jT51A==",
   "success": true,
-  "projectFilePath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/RecruitingWeb1.csproj",
+  "projectFilePath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/RecruitingWeb1.csproj",
   "expectedPackageFiles": [
     "/Users/gaode/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

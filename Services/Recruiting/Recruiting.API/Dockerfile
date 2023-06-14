@@ -19,4 +19,5 @@ RUN dotnet publish "Recruiting.API.csproj" -c Release -o /app/publish -r linux-x
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+ENV angularURL='http://localhot:4200'
 ENTRYPOINT ["dotnet", "Recruiting.API.dll"]

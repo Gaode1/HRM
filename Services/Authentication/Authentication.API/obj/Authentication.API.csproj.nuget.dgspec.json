@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj": {}
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj": {}
   },
   "projects": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj",
         "projectName": "Authentication.API",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Authentication/Authentication.API/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Authentication/Authentication.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"

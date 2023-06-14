@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dRaXoxlQs5ZvLCYJoozwErGkHQy2/GNd+6jEaMAxYJaQEHVtzuCazxfLRcN5jCkRBlZkQaZ9En1Bw65nq1on/A==",
+  "dgSpecHash": "ZNlcVTP5YgOnk3wBuDdQ3JzmhaYA6sTV0OOfl13sRmBR9oqGmRtDTdDm9xq8LQVJrlPmTA+yUx3V7BtsVGrarQ==",
   "success": true,
-  "projectFilePath": "/Users/gaode/RiderProjects/src/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj",
+  "projectFilePath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Authentication/Authentication.API/Authentication.API.csproj",
   "expectedPackageFiles": [
     "/Users/gaode/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

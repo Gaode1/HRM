@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj": {}
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/Infrastructure/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"
@@ -85,8 +85,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj"
+              "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj"
               }
             }
           }

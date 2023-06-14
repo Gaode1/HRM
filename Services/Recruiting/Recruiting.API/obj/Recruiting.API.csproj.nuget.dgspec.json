@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj": {}
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj": {}
   },
   "projects": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Infrastructure/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"
@@ -85,8 +85,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj"
+              "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj"
               }
             }
           }
@@ -126,14 +126,14 @@
         }
       }
     },
-    "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj",
         "projectName": "Recruiting.API",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Recruiting.API/Recruiting.API.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Recruiting.API/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Recruiting.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"
@@ -148,11 +148,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj"
+              "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj"
               },
-              "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj"
+              "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -167,6 +167,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -184,6 +188,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.30.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

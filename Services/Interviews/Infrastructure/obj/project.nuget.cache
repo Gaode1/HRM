@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lKcfWmrA+jMOWHoqhe8rRhmGH1lZ5uCjWRc538fbiFgZmBAxWr8Ry3nxkmfdDu8nlOFNikPBThBm5+yLwK4ogw==",
+  "dgSpecHash": "6aDrdh3naQFTUIqCXww9pKCDPEOVbAO2s4PD6H/Xhp54a0coMYkhBx5zxTxoWE8NhDH/BUpqZ+opu7ajKGhe1A==",
   "success": true,
-  "projectFilePath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/gaode/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

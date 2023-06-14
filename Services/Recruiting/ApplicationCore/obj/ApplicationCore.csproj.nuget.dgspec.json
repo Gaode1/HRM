@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {}
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {}
   },
   "projects": {
-    "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/gaode/.nuget/packages/",
-        "outputPath": "/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/ApplicationCore/obj/",
+        "outputPath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gaode/.nuget/NuGet/NuGet.Config"

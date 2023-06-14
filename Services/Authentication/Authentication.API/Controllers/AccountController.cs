@@ -45,13 +45,21 @@ namespace Authentication.API.Controllers
             var identityResult = await _userManager.CreateAsync(user, model.Password);
             if (!identityResult.Errors.Any())
             {
-                return CreatedAtRoute("GetUser", new { Controller = "account", id = user.Id });
+                return CreatedAtRoute("GetUser", new { Controller = "account", id = user.Id }, 
+                    "Account Created");
             }
             return BadRequest(identityResult.Errors.Select(error=> error.Description).ToList());
         }
-        
-        //login   "email": "user@example.com", // andy@
-        //        "password": "qweASD123."     // qweASD1.
+
+        [HttpGet]
+        [Route("{id:guid}", Name = "GetUser")]
+        public async Task<IActionResult> GetUser(Guid id)
+        {
+            return Ok("1");
+        }
+
+        //login   "email": "user@example.com", // andy@  //user1@example.com
+        //        "password": "qweASD123."     // qweASD1. //String1!
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginModel model)
         {
@@ -70,7 +78,7 @@ namespace Authentication.API.Controllers
         private string CreateJWT(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var secretKey = Encoding.ASCII.GetBytes(_configuration["SecretKey"]);
+            var secretKey = Encoding.UTF8.GetBytes(_configuration["SecretKey"]);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Expires = DateTime.UtcNow.AddDays(7),

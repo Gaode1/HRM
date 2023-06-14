@@ -10,3 +10,15 @@
 /Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/refint/ApplicationCore.dll
 /Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.pdb
 /Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ref/ApplicationCore.dll
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/bin/Debug/net7.0/ApplicationCore.deps.json
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/bin/Debug/net7.0/ApplicationCore.dll
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/bin/Debug/net7.0/ApplicationCore.pdb
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.csproj.AssemblyReference.cache
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.AssemblyInfoInputs.cache
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.AssemblyInfo.cs
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.dll
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/refint/ApplicationCore.dll
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ApplicationCore.pdb
+/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/obj/Debug/net7.0/ref/ApplicationCore.dll

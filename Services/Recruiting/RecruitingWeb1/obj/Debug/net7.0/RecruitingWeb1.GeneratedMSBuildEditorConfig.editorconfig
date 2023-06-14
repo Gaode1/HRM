@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RecruitingWeb1
 build_property.RootNamespace = RecruitingWeb1
-build_property.ProjectDir = /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/
+build_property.ProjectDir = /Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1
+build_property.MSBuildProjectDirectory = /Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Areas/Identity/Pages/_ViewStart.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Candidate/Candidates.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Candidate/Candidates.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0NhbmRpZGF0ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Candidate/Index.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Candidate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Employee/Index.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Home/Index.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Home/Privacy.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Job/Create.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Job/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Job/Detail.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Job/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iL0RldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Job/Index.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Job/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSm9iL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/Error.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/_LoginPartial.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Status/Index.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Status/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdHVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Submission/Index.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Submission/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3VibWlzc2lvbi9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/_ViewImports.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/_ViewStart.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gaode/RiderProjects/src/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/_Layout.cshtml]
+[/Users/gaode/RiderProjects/Antra/HRM/Services/Recruiting/RecruitingWeb1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y2v51i8g21

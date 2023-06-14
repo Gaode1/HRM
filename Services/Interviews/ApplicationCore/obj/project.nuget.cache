@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TW9HAleAODDJ09svAZb0ivepLfo9YmNRLQLw2n3geVw6y+ua0qg96iJlJ58/z5FZB3YqjcZ17deSW1ntGJ12wA==",
+  "dgSpecHash": "4Iy7uHF27l0rAFeEmUwQas3k1qrbQuNsxZMbYEHHHM1w66+xzD7C0LHOD+0E4CdTmkijLgjXG0OmKRX8OKej8A==",
   "success": true,
-  "projectFilePath": "/Users/gaode/RiderProjects/src/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj",
+  "projectFilePath": "/Users/gaode/RiderProjects/Antra/HRM/Services/Interviews/ApplicationCore/ApplicationCore.csproj",
   "expectedPackageFiles": [
     "/Users/gaode/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/gaode/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
