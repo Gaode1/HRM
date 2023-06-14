@@ -5,6 +5,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = " Interviews", " Interviews", "{69FA9698-CE97-42FE-827E-92B9FE7C8D27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{E2E48CE4-B296-4E97-82E3-EF7C4518BED7}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Authentication\Dockerfile = Services\Authentication\Dockerfile
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recruiting", "Recruiting", "{A9AEC78F-38E9-4726-A858-3AB8BC1F8F35}"
 	ProjectSection(SolutionItems) = preProject
