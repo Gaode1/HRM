@@ -7,6 +7,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{E2E48CE4-B296-4E97-82E3-EF7C4518BED7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recruiting", "Recruiting", "{A9AEC78F-38E9-4726-A858-3AB8BC1F8F35}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Recruiting\Dockerfile = Services\Recruiting\Dockerfile
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "Services\Recruiting\ApplicationCore\ApplicationCore.csproj", "{FABD33DD-74D7-44A4-A598-260C6767B5D9}"
 EndProject
