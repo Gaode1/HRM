@@ -7,8 +7,8 @@ on:
     branches: 
       [ master ]
     paths:
-    - '/Services/Recruiting/Recruiting.API/Dockerfile/**'
-    - '.github/workflows/recruiting-container1-AutoDeployTrigger-ead35a70-ee16-42c9-80f1-ebed159bc93f.yml'
+    - '/Dockerfile.Recruiting/**'
+    - '.github/workflows/recruiting-container1-AutoDeployTrigger-16bbdb22-b07f-40dd-9434-8feab8c3724c.yml'
 
   # Allow mannually trigger 
   workflow_dispatch:
@@ -29,14 +29,14 @@ jobs:
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v1
         with:
-          appSourcePath: ${{ github.workspace }}/Services/Recruiting/Recruiting.API
+          appSourcePath: ${{ github.workspace }}
           registryUrl: apr2023cr.azurecr.io
           registryUsername: ${{ secrets.RECRUITINGCONTAINER1_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.RECRUITINGCONTAINER1_REGISTRY_PASSWORD }}
           containerAppName: recruiting-container1
           resourceGroup: April2023Batch
           imageToBuild: apr2023cr.azurecr.io/recruiting-microservice:${{ github.sha }}
-          dockerfilePath: Dockerfile
+          dockerfilePath: Dockerfile.Recruiting 
 
      
 
