@@ -70,12 +70,12 @@ namespace Authentication.API.Controllers
 
             var isAuthenticated = await _userManager.CheckPasswordAsync(user, model.Password);
             if (isAuthenticated)
-                return Ok(new { token = CreateJWT(user) });
+                return Ok(new { token = CreateJwt(user) });
             return Unauthorized("username password is invalid");    
         }
 
 
-        private string CreateJWT(User user)
+        private string CreateJwt(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var secretKey = Encoding.UTF8.GetBytes(_configuration["SecretKey"]);
