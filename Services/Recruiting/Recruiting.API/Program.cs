@@ -1,10 +1,13 @@
+using System.Text;
 using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
 using ApplicationCore.Entities;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +39,22 @@ builder.Services.AddDbContext<RecruitingDbContext>(
     options=>options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection")));
 
 
+
+//add jwt
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme  )
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "HRM",
+            ValidAudience = "HRM Users",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["SecretKey"]))
+        };
+    } );
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,8 +65,9 @@ var app = builder.Build();
 // }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
+
 
 var angularURL = Environment.GetEnvironmentVariable("angularURL");
 

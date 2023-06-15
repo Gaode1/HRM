@@ -6,6 +6,7 @@ using ApplicationCore.Contracts.Services;
 using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,7 @@ namespace Recruiting.API.Controllers
         //http:localhost/api/job
         [Route("")]
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllJobs()
         {
             var jobs = await _jobService.GetAllJobs();

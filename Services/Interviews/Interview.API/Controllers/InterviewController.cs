@@ -10,11 +10,11 @@ namespace Interview.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class InterviewController : ControllerBase
     {
         [HttpGet]
         [Route("")]
+        [Authorize]
         public IActionResult GetAllInterviews()
         {
             var interviews = new List<string>(new[] { "qwe", "asd", "zxc" });

@@ -96,7 +96,6 @@ namespace Authentication.API.Controllers
                     new Claim("location", "USA/DC")
                 })
             };
-
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
