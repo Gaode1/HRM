@@ -3,6 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Onboarding", "Onboarding", "{82D08C06-DC61-4238-912F-FC971493C395}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = " Interviews", " Interviews", "{69FA9698-CE97-42FE-827E-92B9FE7C8D27}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Interviews\Dockerfile = Services\Interviews\Dockerfile
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{E2E48CE4-B296-4E97-82E3-EF7C4518BED7}"
 	ProjectSection(SolutionItems) = preProject
